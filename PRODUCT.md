@@ -1,0 +1,2 @@
+# Vangyan
+A React and Vite academic demonstration helping Adivasi community members and facilitators understand FRA rights, discover illustrative schemes, and prepare a claim checklist. English language is an assumption pending user preference. The user requests forest colors, responsive accessible UI, lucide icons, Rights Navigator, Scheme Finder, and Form A/B/C guidance. No official affiliation, legal advice, online filing, or persistence of personal data. Scheme entries are demonstrations with external verification links.
