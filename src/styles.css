@@ -11,3 +11,48 @@
 @media print{.header,.hero,footer,.no-print,.skip{display:none!important}body{background:var(--white);font-size:12px}.container{width:100%}.workspace{padding:0}.wizard-layout{display:block}.wizard-main{border:0;padding:0}.notice{break-inside:avoid}.checklist label{break-inside:avoid}.wizard-main h3{font-size:21px}a{color:var(--ink)}.review{print-color-adjust:exact}}
 
 h1,h2{text-wrap:balance}button:active{transform:translateY(1px)}button:disabled{opacity:.5;cursor:not-allowed}
+
+/* Readability and interaction refinements. */
+[hidden]{display:none!important}
+.header nav button{min-height:44px}
+.hero :focus-visible{outline-color:var(--lime)}
+.hero-aside span{font-style:normal;font-size:18px}
+.hero h1{max-width:740px}
+.section-heading p,.right-card>p,.scheme-copy>p,.wizard-main p{font-size:15px;line-height:1.7}
+.right-card{display:flex;flex-direction:column;transition:border-color .18s}
+.right-card:hover{border-color:var(--green)}
+.right-card h3{font-size:23px}
+.right-card ul{font-size:13px;line-height:1.65;flex:1}
+.card-link{min-height:44px;font-size:13px}
+.gram-panel p,.start-panel p{font-size:14px;line-height:1.75}
+.gram-panel summary{font-size:14px;min-height:44px}
+.tag{font-size:12px}
+.brand small,.header-note,.hero-bottom,.guidance p,.footer-top p,.footer-top>a:last-child,.footer-bottom{font-size:12px}
+.notice{font-size:14px;line-height:1.75}
+.button{font-size:14px}
+.filters label,.results-heading,.text-link{font-size:14px}
+.search input{min-height:48px}
+.filters input,.filters select,.field-grid input,.field-grid textarea{font-size:16px}
+.form-option small,.wizard-sidebar p{font-size:13px}
+.form-option strong,.field-grid label,.checklist label,.review>div{font-size:15px}
+.form-option:focus-within{outline:2px solid var(--green);outline-offset:2px}
+.checklist label{padding-block:7px;align-items:flex-start}
+.checklist input{margin-top:4px}
+[aria-invalid=true]{border-color:var(--error)}
+.empty-list{display:none}
+.source-note{font-size:12px!important}
+@media(max-width:760px){
+ .header nav button{font-size:12px;padding:10px 7px}
+ .hero h1{font-size:clamp(33px,8vw,42px)}
+ .hero p{font-size:16px}
+ .hero-actions .button,.hero-actions a{font-size:14px}
+ .hero-bottom{font-size:12px}
+ .section-heading h2{font-size:30px}
+ .right-card>p,.gram-panel p,.start-panel p,.wizard-main p,.scheme-copy>p{font-size:16px}
+ .right-card ul,.notice,.guidance p{font-size:14px}
+ .wizard-sidebar li{font-size:12px}
+ .form-option strong,.field-grid label,.checklist label{font-size:16px}
+ .wizard-actions .button{flex:1}
+ .footer-top p{margin-left:0}
+}
+@media print{.right-card{display:block}.checklist label{font-size:12px}.wizard-main p,.notice{font-size:11px}}
